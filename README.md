@@ -1,4 +1,4 @@
-iPay Gateway API
+iPay Gateway API - Demo
 =================================================
 
 A web based integration demo that interacts with iPay Africa's payment gateway.
