@@ -11,11 +11,17 @@ Prerequisites
 
 Instructions
 ============
-* Unzip downloaded folder to the root folder of your Apache environment.
-* With -AMP server running, navigate to the ```SERVER_ADDR/index.php```
+* Unzip downloaded folder to the ```DOCUMENT_ROOT``` folder of your Apache environment.
+* All the information can be found by creating a simple ```info.php``` file with the following content:
+    ```
+    <?php
+      phpinfo();
+    ?>
+    ```
+* With *-AMP server running, navigate to the ```SERVER_ADDR/index.php```
 * Click submit 
-
+* The callback response is returned in the URL and logged in ```response.log```.
+* It contains variables returned from the transcaction, which can be used to verify payment.
 * To verify the payment, navigate to ```SERVER_ADDR/verify.php```
 * The page should load a list of parameters and a message indicating the status of the demo transaction.
 
-* The Callback response is logged in ```response.log``` and contains variables returned from the iPay gateway payment.
